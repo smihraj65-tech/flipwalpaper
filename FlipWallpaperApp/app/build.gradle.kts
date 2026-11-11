@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.flipwallpaper.app"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.flipwallpaper.app"
