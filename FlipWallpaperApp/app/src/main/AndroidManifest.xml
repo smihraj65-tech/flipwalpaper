@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flipwallpaper.app">
 
-    <!-- Permissions -->
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
@@ -25,15 +24,8 @@
         </activity>
 
         <service
-        <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="extra_values" />
             android:name=".FlipWallpaperService"
-            android:enabled="true"
-            android:exported="false"
-            android:foregroundServiceType="specialUse">
-            <property
-                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="flip_wallpaper_service" />
-        </service>
+            android:exported="false" />
 
     </application>
 
